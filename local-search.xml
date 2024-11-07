@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>搭建博客</title>
+    <link href="/2024/11/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2024/11/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><blockquote><p><a href="https://blog.csdn.net/yaorongke/article/details/119089190?spm=1001.2014.3001.5506">GitHub Pages + Hexo搭建个人博客网站，史上最全教程</a></p><p><a href="https://blog.csdn.net/m0_43401436/article/details/107191688">hexo博客中插入图片失败——解决思路及个人最终解决办法</a></p><p><a href="https://blog.csdn.net/m0_61780691/article/details/135185326">GitHub和IDEA的配合使用 | Github获取token</a></p></blockquote><hr><h2 id="搭建遇见的问题："><a href="#搭建遇见的问题：" class="headerlink" title="搭建遇见的问题："></a>搭建遇见的问题：</h2><h3 id="图片引用"><a href="#图片引用" class="headerlink" title="图片引用"></a>图片引用</h3><p>我是用markdown语法引用图片的，先前看教程，以为引用图片的格式是</p><blockquote><p>![](&lt;文件名&gt;.文件格式)</p></blockquote><p>结果在网页里图片没有跳出来，</p><p><img src="/2024/11/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/40AC6BCA6715D6F42B44E355E0620A83.png" alt="40AC6BCA6715D6F42B44E355E0620A83"></p><p>查了下发现格式应该是</p><blockquote><p>![&lt;文件名&gt;](&lt;文件名&gt;.文件格式)</p></blockquote><p>修改后，图片就能成功显示了</p><p><img src="/2024/11/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/0c905da6-2a22-464f-a6d4-a6fb595dccf7.png" alt="0c905da6-2a22-464f-a6d4-a6fb595dccf7"></p><h3 id="阅读量统计"><a href="#阅读量统计" class="headerlink" title="阅读量统计"></a>阅读量统计</h3><p>配置leancloud时要加上</p><blockquote><p><font style="color:rgb(44, 62, 80);">server_url: <a href="https://nioyonol.lc-cn-n1-shared.com/">https://nioyonol.lc-cn-n1-shared.com</a></font></p></blockquote><p><font style="color:rgb(44, 62, 80);">才能使用leancloud，否则阅读量和PV、UV统计数都无法显示，我一开始没弄这个，显示不出来就把leancloud换成了busuanzi，结果显示是显示出来了，但显示的数据很奇怪</font></p><p><img src="/2024/11/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/954fa2bc-93dc-41b2-993e-8836b46821a0.png" alt="954fa2bc-93dc-41b2-993e-8836b46821a0"></p><p>使用leancloud国内版的时候，在没把网站部署到github pages前，它显示的数据也有点奇怪，</p><p><img src="/2024/11/07/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/3844AD6DA2DED04E95B89CD3291BB83F.png" alt="3844AD6DA2DED04E95B89CD3291BB83F"></p><p>想查查看纠正一下，没弄起来，就把它放到一边先弄后面的了，准备之后再弄，等我把网站部署到github pages上后查看网站，它又恢复正常了</p><h3 id="配置GitHub相关信息"><a href="#配置GitHub相关信息" class="headerlink" title="配置GitHub相关信息"></a>配置GitHub相关信息</h3><p>repo这块一开始我以为就是把我github上的那个网页复制粘贴上去就可以了，结果运行的时候它报错了，后来就老老实实地照着教程抄它的网址</p><blockquote><p>repo: <a href="https://github.com/">https://github.com/</a>&lt;用户名&gt;&#x2F;&lt;用户名&gt;.github.io.git</p></blockquote><h3 id="token的获取"><a href="#token的获取" class="headerlink" title="token的获取"></a>token的获取</h3><p>界面点进去全是英文和选项，把我人都看懵了，就去网上搜了下，这里要注意在Expiration选项中选择No expiration，要不然过了期限后又要重新获取token了</p><hr><h2 id="一些感想："><a href="#一些感想：" class="headerlink" title="一些感想："></a>一些感想：</h2><p>这个搭建博客我重开了两次，都是不知道为什么就报错然后删了再来，第二次还误删git，人都要气炸了</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Fluid</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
